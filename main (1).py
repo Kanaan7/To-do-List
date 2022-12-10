@@ -37,7 +37,7 @@ def check():
         temp = json.load(f)
         for entry in temp:
             if len(temp) == 0:
-                print("there is no data in the system at the moment!!")
+                print(" No data in the list at the moment")
 
 
 #delete data
@@ -47,7 +47,7 @@ def delete_list():
     with open(fileName, "r") as f:
         temp = json.load(f)
         dataLen = len(temp) - 1
-    print("which index number would you like to delete?")
+    print("which item would you like to delete?")
     deleteOpt = input(f"select a number 0-{dataLen}")
     x = 0
     for entry in temp:
